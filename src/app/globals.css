@@ -27,10 +27,11 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&q=80');
+  background-image: url('https://images.pexels.com/photos/2797526/pexels-photo-2797526.jpeg');
   background-size: cover;
-  background-position: center;
+  background-position: center top; /* Ubah ke center top untuk fokus ke temple */
   background-repeat: no-repeat;
+  background-attachment: fixed; /* Optional: parallax effect */
   z-index: 1;
 }
 
