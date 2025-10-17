@@ -216,7 +216,7 @@ const NavbarComp = () => {
 
           <li className="nav-cta">
             <Link href="#" className="cta-button">
-              Registrer Now
+              Coming Soon 2026
             </Link>
           </li>
         </ul>
