@@ -29,7 +29,7 @@ const AfterEventComp = () =>{
                         </div>
                     
                         <div className="highlight-box"  style={{ marginTop: "32px" }}>
-                            <div className="quote-icon">"</div>
+                            <div className="quote-icon">&quot;</div>
                             <p className="highlight-text">
                                 Every innovation starts with a dream. Every achievement is born from dedication. Together, we create the future.
                             </p>

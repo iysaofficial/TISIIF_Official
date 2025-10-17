@@ -139,7 +139,7 @@ const CategoryComp = () =>{
 
                 <div className="category-cta">
                     <p className="cta-text">
-                        Still confused about choosing a category? We're here to help you!
+                        Still confused about choosing a category? We&apos;re here to help you!
                     </p>
                     <Link href="#contact" className="cta-category-button">
                         Free Consultation

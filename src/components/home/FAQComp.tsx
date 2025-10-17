@@ -78,14 +78,14 @@ const FAQComp = () =>{
 
                         <div className="faq-item">
                             <div className="faq-header">
-                                <div className="faq-question">I registered one week ago but haven't received LoA and Invoice yet?</div>
+                                <div className="faq-question">I registered one week ago but haven&apos;t received LoA and Invoice yet?</div>
                                 <div className="faq-toggle">
                                     <i className="fas fa-chevron-down"></i>
                                 </div>
                             </div>
                             <div className="faq-answer">
                                 <div className="faq-answer-content">
-                                    Try checking the spam folder in your team leader's email, maybe the email from the IYSA team went to the spam folder. Make sure to check carefully!
+                                    Try checking the spam folder in your team leader&apos;s email, maybe the email from the IYSA team went to the spam folder. Make sure to check carefully!
                                 </div>
                             </div>
                         </div>
@@ -106,21 +106,21 @@ const FAQComp = () =>{
 
                         <div className="faq-item">
                             <div className="faq-header">
-                                <div className="faq-question">I want to pay the registration fee but can't find the invoice. Where is the payment transferred?</div>
+                                <div className="faq-question">I want to pay the registration fee but can&apos;t find the invoice. Where is the payment transferred?</div>
                                 <div className="faq-toggle">
                                     <i className="fas fa-chevron-down"></i>
                                 </div>
                             </div>
                             <div className="faq-answer">
                                 <div className="faq-answer-content">
-                                    Have you read LoA to the end yet? We will send the invoice with your team's LoA. Make sure you have read the email from us to the end! For payment, you can transfer to the account listed on the invoice. Make sure you pay according to the nominal stated on the invoice.
+                                    Have you read LoA to the end yet? We will send the invoice with your team&apos;s LoA. Make sure you have read the email from us to the end! For payment, you can transfer to the account listed on the invoice. Make sure you pay according to the nominal stated on the invoice.
                                 </div>
                             </div>
                         </div>
 
                         <div className="faq-item">
                             <div className="faq-header">
-                                <div className="faq-question">I've already paid the registration fee. Where can I upload the proof of payment?</div>
+                                <div className="faq-question">I&apos;ve already paid the registration fee. Where can I upload the proof of payment?</div>
                                 <div className="faq-toggle">
                                     <i className="fas fa-chevron-down"></i>
                                 </div>
@@ -141,21 +141,21 @@ const FAQComp = () =>{
                             </div>
                             <div className="faq-answer">
                                 <div className="faq-answer-content">
-                                    We will send a receipt for payment in a maximum of 7 working days to the team leader's email, after you have uploaded proof of payment!
+                                    We will send a receipt for payment in a maximum of 7 working days to the team leader&apos;s email, after you have uploaded proof of payment!
                                 </div>
                             </div>
                         </div>
 
                         <div className="faq-item">
                             <div className="faq-header">
-                                <div className="faq-question">One more week for judging. How come I have not received my team's presentation schedule yet?</div>
+                                <div className="faq-question">One more week for judging. How come I have not received my team&apos;s presentation schedule yet?</div>
                                 <div className="faq-toggle">
                                     <i className="fas fa-chevron-down"></i>
                                 </div>
                             </div>
                             <div className="faq-answer">
                                 <div className="faq-answer-content">
-                                    We will send the online participant presentation schedule no later than 2 days before the judging takes place to the WhatsApp group and also the team leader's email. Make sure you diligently check the information we provide on the WhatsApp group and also email!
+                                    We will send the online participant presentation schedule no later than 2 days before the judging takes place to the WhatsApp group and also the team leader&apos;s email. Make sure you diligently check the information we provide on the WhatsApp group and also email!
                                 </div>
                             </div>
                         </div>
@@ -201,7 +201,7 @@ const FAQComp = () =>{
                             </div>
                             <div className="faq-answer">
                                 <div className="faq-answer-content">
-                                    We will provide a Zoom link on the judging day, and we will send it periodically to the group according to your team's presentation time.
+                                    We will provide a Zoom link on the judging day, and we will send it periodically to the group according to your team&apos;s presentation time.
                                 </div>
                             </div>
                         </div>
@@ -215,7 +215,7 @@ const FAQComp = () =>{
                             </div>
                             <div className="faq-answer">
                                 <div className="faq-answer-content">
-                                    You can enter Zoom with a maximum of 5 accounts for participants, and all Zoom accounts must follow the name format that we have provided, namely "Room Number_Team Leader Name_Institution Name".
+                                    You can enter Zoom with a maximum of 5 accounts for participants, and all Zoom accounts must follow the name format that we have provided, namely &quot;Room Number_Team Leader Name_Institution Name&quot;.
                                 </div>
                             </div>
                         </div>

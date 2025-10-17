@@ -3,7 +3,7 @@ import './globals.css'
 
 import HeroComp from '@/components/home/HeroComp'
 import CategoryComp from '@/components/home/CategoryComp';
-import AfterEventComp from '@/components/home/AfterEventComp';
+// import AfterEventComp from '@/components/home/AfterEventComp';
 import ContactComp from '@/components/home/ContactComp';
 import LogoComp from '@/components/home/LogoComp';
 import FAQComp from '@/components/home/FAQComp';

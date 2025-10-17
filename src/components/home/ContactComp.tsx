@@ -44,14 +44,14 @@ const ContactComp = () =>{
                         Get In Touch <span className="section-title-highlight">With Us</span>
                     </h2>
                     <p className="section-subtitle">
-                        Have questions about the competition? We're here to help! Send us a message and we'll respond as soon as possible.
+                        Have questions about the competition? We&apos;re here to help! Send us a message and we&apos;ll respond as soon as possible.
                     </p>
                 </div>
 
                 <div className="contact-content">
                     <div className="contact-info">
                         <p className="info-text">
-                            We're always excited to hear from passionate innovators like you. Whether you have questions about registration, need guidance on your project, or want to learn more about our competition, feel free to reach out!
+                            We&apos;re always excited to hear from passionate innovators like you. Whether you have questions about registration, need guidance on your project, or want to learn more about our competition, feel free to reach out!
                         </p>
 
                         <div className="contact-cards">
@@ -172,7 +172,7 @@ const ContactComp = () =>{
                             </button>
 
                             <p className="form-note">
-                                By submitting this form, you agree to our Terms of Service and Privacy Policy. We'll get back to you within 24 hours.
+                                By submitting this form, you agree to our Terms of Service and Privacy Policy. We&apos;ll get back to you within 24 hours.
                             </p>
                         </form>
                     </div>
