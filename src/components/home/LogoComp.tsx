@@ -19,16 +19,10 @@ const LogoComp = () =>{
                     
                     <div className="logo-grid">
                         <div className="logo-item">
-                            <img src="https://via.placeholder.com/200x80/22d3ee/ffffff?text=Organization+1" alt="Organization 1 Logo"/>
+                            <img src="/assets/images/logo/LogoIYSA.webp" alt="Organization 1 Logo"/>
                         </div>
                         <div className="logo-item">
-                            <img src="https://via.placeholder.com/200x80/3b82f6/ffffff?text=Organization+2" alt="Organization 2 Logo"/>
-                        </div>
-                        <div className="logo-item">
-                            <img src="https://via.placeholder.com/200x80/8b5cf6/ffffff?text=Organization+3" alt="Organization 3 Logo"/>
-                        </div>
-                        <div className="logo-item">
-                            <img src="https://via.placeholder.com/200x80/10b981/ffffff?text=Organization+4" alt="Organization 4 Logo"/>
+                            <img src="/assets/images/logo/Nextgen.png" alt="Organization 2 Logo"/>
                         </div>
                     </div>
                 </div>
@@ -40,22 +34,7 @@ const LogoComp = () =>{
                     
                     <div className="logo-grid">
                         <div className="logo-item">
-                            <img src="https://via.placeholder.com/200x80/f59e0b/ffffff?text=Sponsor+1" alt="Sponsor 1 Logo"/>
-                        </div>
-                        <div className="logo-item">
-                            <img src="https://via.placeholder.com/200x80/ec4899/ffffff?text=Sponsor+2" alt="Sponsor 2 Logo"/>
-                        </div>
-                        <div className="logo-item">
-                            <img src="https://via.placeholder.com/200x80/06b6d4/ffffff?text=Sponsor+3" alt="Sponsor 3 Logo"/>
-                        </div>
-                        <div className="logo-item">
-                            <img src="https://via.placeholder.com/200x80/14b8a6/ffffff?text=Sponsor+4" alt="Sponsor 4 Logo"/>
-                        </div>
-                        <div className="logo-item">
-                            <img src="https://via.placeholder.com/200x80/f97316/ffffff?text=Sponsor+5" alt="Sponsor 5 Logo"/>
-                        </div>
-                        <div className="logo-item">
-                            <img src="https://via.placeholder.com/200x80/a855f7/ffffff?text=Sponsor+6" alt="Sponsor 6 Logo"/>
+                            <img src="/assets/images/logo/MIICA.png" alt="Sponsor 1 Logo"/>
                         </div>
                     </div>
                 </div>

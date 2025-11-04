@@ -19,7 +19,7 @@ const FooterComp = () => {
                         </div>
                     </div>
                     <p className="brand-description">
-                        Platform kompetisi invensi terkemuka yang menghubungkan inovator muda dengan peluang untuk mengembangkan ide-ide brilian mereka.
+                        Thailand International Science, Invention and Innovation Fair (TISIIF) organized by IYSA and Next Generation Thailand, as an international platform for students to showcase creativity and innovation in science and technology.
                     </p>
                     <div className="media-icons">
                         <Link href="https://www.facebook.com/profile.php?id=100063979907207" target="_blank"><i className="fab fa-facebook-f"></i></Link>

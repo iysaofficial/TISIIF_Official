@@ -75,7 +75,7 @@ const NavbarComp = () => {
           </li>
 
           <li className="nav-item">
-            <Link href="#" className="nav-link">
+            <Link href="https://drive.google.com/file/d/1JCLWwnMJ-D5TKZ9VkniD2mg3McIyqFaA/view?usp=sharing" className="nav-link">
               Guide Book
             </Link>
           </li>
@@ -215,8 +215,8 @@ const NavbarComp = () => {
           
 
           <li className="nav-cta">
-            <Link href="#" className="cta-button">
-              Coming Soon 2026
+            <Link href="/registration" className="cta-button">
+              Registration Now
             </Link>
           </li>
         </ul>

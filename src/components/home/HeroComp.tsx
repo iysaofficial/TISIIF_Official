@@ -20,7 +20,7 @@ const HeroComp = () =>{
                 <div className="hero-badge">
                     <span className="badge-icon"><i className="fa-solid fa-clock"></i></span>
                     {/* Pendaftaran Dibuka - Batch 2024 */}
-                    Coming Soon 2026
+                    Open Registration
                 </div>
 
                 <h1 className="hero-title">
@@ -35,13 +35,13 @@ const HeroComp = () =>{
                 </p>
 
                 <div className="hero-cta">
-                    <Link href="#" className="btn btn-primary">
+                    <Link href="/registration" className="btn btn-primary">
                         <span><i className="fa-solid fa-calendar-check"></i></span>
-                        Coming Soon 2026
+                        Registration
                     </Link>
-                    <Link href="#" className="btn btn-secondary">
-                        <span><i className="fa-solid fa-play"></i></span>
-                        Promotion Video
+                    <Link href="https://drive.google.com/file/d/1JCLWwnMJ-D5TKZ9VkniD2mg3McIyqFaA/view?usp=sharing" className="btn btn-secondary">
+                        <span><i className="fa-solid fa-book"></i></span>
+                        Guide Book
                     </Link>
                 </div>
 

@@ -105,7 +105,7 @@ const CategoryComp = () =>{
                         <div className="category-icon">
                             <i className="fas fa-heartbeat"></i>
                         </div>
-                        <h3 className="category-name">Health & Medicine</h3>
+                        <h3 className="category-name">Health & Medicine, Biocencors Technology</h3>
                         <p className="category-description">
                             Medical innovations, biosensors technology, and healthcare solutions
                         </p>
