@@ -51,6 +51,19 @@ const InternationalOfflineComp: React.FC = () => {
               body: new FormData(form),
             });
             
+            // Ambil data penting dari form
+            const formData = new FormData(form);
+            const name = formData.get("FULL_NAME");
+            const project = formData.get("PROJECT_TITLE");
+            const school = formData.get("SCHOOL_NAME");
+
+            // Simpan ke sessionStorage
+            sessionStorage.setItem("submittedData", JSON.stringify({
+              name,
+              project,
+              school
+            }));
+
             // Success state
             if (submitButton) {
               submitButton.textContent = 'SUCCESSFULLY SENT!';

@@ -60,19 +60,26 @@ const HomeNationalComp = () => {
               {selectedType === "online" && (
                 <p>
                   Before proceeding, please read and agree to the Terms & Conditions for National Online Participants:<br/><br/>
-                  • Participants must submit required documents before the deadline.<br/>
-                  • Participants must ensure all documents match the selected category.<br/>
-                  • The committee’s decision is final and cannot be contested.<br/><br/>
+                  • Participants who do not submit the required documents (extended abstract, PowerPoint) after two reminders will be considered to have withdrawn automatically.<br/>
+                  • Participants must use a title and extended abstract that match the selected category. (International participants must use English for all required documents.)<br/>
+                  • The committees decision on this matter is final and cannot be contested.<br/><br/>
+                  Additionally, we inform you that each event will be registered for curation by SIM T Puspresnas. <br /><br />
+                  However, the curation results are fully under the authority of Puspresnas and cannot be contested by any party. Therefore, we do not accept objections or complaints regarding the results determined by Puspresnas. <br /><br />
                 </p>
               )}
 
               {selectedType === "offline" && (
                 <p>
                   Before proceeding, please read and agree to the Terms & Conditions for National Offline Participants:<br/><br/>
-                  • Participants must bring poster & product onsite.<br/>
-                  • Awards will be given based on schedule; no early awarding requests.<br/>
-                  • Participants must attend all activities.<br/>
-                  • The committee’s decision is final and cannot be contested.<br/><br/>
+                  • Participants who do not submit the required documents (extended abstract, poster) after two reminders will be considered to have withdrawn automatically.<br/>
+                  • Participants must use a title and extended abstract that match the selected category. (International participants must use English for all requirements.)<br/>
+                  • Participants are required to create a poster in A0 size, bring their product, and also provide a paper/extended abstract (in hard copy) during the judging session.<br/>
+                  • Awards will be presented to participants according to the sequence set in the event schedule (participants are not allowed to request their award before their turn).<br/>
+                  • Participants are required to attend the entire event series according to the schedule prepared by the organizing committee.<br/>
+                  • For offline participants eligible for awards such as Best Booth, Best Poster, Best Presentation, Best Project, cash prizes, Semi Grand Award, and Grand Award but are unable to attend the awarding ceremony, the respective prize will be forfeited. <br />
+                  • The committees decision on this matter is final and cannot be contested. <br /><br />
+                  Additionally, we inform you that each event will be registered for curation by SIM T Puspresnas. <br /><br />
+                  However, the curation results are fully under the authority of Puspresnas and cannot be contested by any party. Therefore, we do not accept objections or complaints regarding the results determined by Puspresnas. <br /><br />
                 </p>
               )}
 

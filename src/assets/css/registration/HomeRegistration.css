@@ -150,3 +150,51 @@
   gap:12px;
   margin-top:20px;
 }
+
+.cancel-button,
+.proceed-button {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 0 8px;
+}
+
+/* Tombol Cancel */
+.cancel-button {
+  background-color: #f2f3f5;
+  color: #333;
+  border: 1px solid #d0d0d0;
+}
+
+.cancel-button:hover {
+  background-color: #e2e3e5;
+  color: #000;
+  transform: scale(1.03);
+}
+
+/* Tombol Proceed */
+.proceed-button {
+  background-color: #2563eb; /* biru elegan */
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.3);
+}
+
+.proceed-button:hover {
+  background-color: #1d4ed8;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
+  transform: scale(1.05);
+}
+
+/* Saat tombol disabled */
+.proceed-button:disabled {
+  background-color: #a5b4fc;
+  color: #e5e7eb;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
