@@ -36,17 +36,17 @@ const FooterComp = () => {
                         <li><Link href="/">Home</Link></li>
                         <li><Link href="/#about">About</Link></li>
                         <li><Link href="/#category">Category</Link></li>
-                        <li><Link href="#">Registration</Link></li>
+                        {/* <li><Link href="/registration">Registration</Link></li> */}
                     </ul>
                 </div>
 
                 <div className="footer-section">
                     <h3>Resources</h3>
                     <ul className="footer-links">
-                        <li><Link href="#">Guide Book</Link></li>
+                        <li><Link href="https://drive.google.com/file/d/1JCLWwnMJ-D5TKZ9VkniD2mg3McIyqFaA/view?usp=sharing" target="_blank">Guide Book</Link></li>
                         <li><Link href="#faq">FAQ</Link></li>
-                        <li><Link href="#">Gallery</Link></li>
-                        <li><Link href="#">Media</Link></li>
+                        {/* <li><Link href="#">Gallery</Link></li> */}
+                        {/* <li><Link href="#">Media</Link></li> */}
                         <li><Link href="#contact">Contact</Link></li>
                     </ul>
                 </div>

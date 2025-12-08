@@ -437,15 +437,28 @@ const DetailProjectSection: React.FC = () => (
         <select name="PROJECT_CATEGORIES" className="select-field" required>
           <option value="">--Choose Project Categories--</option>
           <option value="Mathematics">Mathematics</option>
-          <option value="Physics, Energy & Engineering">Physics, Energy & Engineering</option>
-          <option value="Life Science">Life Science</option>
-          <option value="Environment">Environment</option>
-          <option value="Education">Education</option>
-          <option value="Technology">Technology</option>
-          <option value="Social Science">Social Science</option>
-          <option value="Health & Medicine, Biocencors Technology">Health & Medicine, Biocencors Technology</option>
-          <option value="Agriculture & Food Science">Agriculture & Food Science</option>
-          <option value="Robotics & AI">Robotics & AI</option>
+          <option value="Physics, Energy & Engineering">
+            Physics, Energy & Engineering
+          </option>
+          <option value="IoT and Its Applications">
+            IoT and Its Applications
+          </option>
+          <option value="Environment Agriculture & Food Science">
+            Environment Agriculture & Food Science
+          </option>
+          <option value="Education and Social Sciences">
+            Education and Social Sciences
+          </option>
+          <option value="Life Sciences, Translational Medicine, and Health">
+            Life Sciences, Translational Medicine, and Health
+          </option>
+          <option value="Biotechnology and Biosensor Technology">
+            Biotechnology and Biosensor Technology
+          </option>
+          <option value="Special Session - TISIIF Next Gen:Idea Pitching Competition on Innovation Science">
+            Special Session - TISIIF Next Gen:Idea Pitching Competition on
+            Innovation Science
+          </option>
         </select>
       </div>
 
