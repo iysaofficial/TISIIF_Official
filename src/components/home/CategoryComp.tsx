@@ -28,7 +28,7 @@ const CategoryComp = () => {
               <h3 className="category-name">Mathematics</h3>
               <p className="category-description">
                 Projects that investigate new mathematical ideas, theories, and
-                applications are encouraged to submit to the "Mathematics "
+                applications are encouraged to submit to the &quot;Mathematics&quot;
                 category
               </p>
               <span className="category-count">View Details</span>

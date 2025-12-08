@@ -14,7 +14,7 @@ const InternationalOfflinePage = () =>{
       alert("You must agree to the Terms & Conditions first.");
       router.push("/registration/international"); // balik ke halaman pemilihan offline/online
     }
-  }, []);
+  }, [router]);
 
   return (
     <>

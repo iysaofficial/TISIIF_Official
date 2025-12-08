@@ -14,7 +14,7 @@ const InternationalOnlinePage = () => {
       alert("You must agree to the Terms & Conditions first.");
       router.push("/registration/international");
     }
-  }, []);
+  }, [router]);
 
   return (
     <>

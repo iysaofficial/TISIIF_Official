@@ -63,7 +63,7 @@ const HomeInternationalComp = () => {
                   Before proceeding, please read and agree to the following terms & conditions for Online Participants:<br/><br/>
                   • Participants who do not submit the required documents (extended abstract, PowerPoint) after two reminders will be considered to have resigned automatically.<br/>
                   • Participants must use the title and extended abstract in accordance with the category they are participating in. (International participants must use English for all required documents)<br/>
-                  • The committee's decision regarding this matter is final and cannot be contested.<br/><br/>
+                  • The committee&apos;s decision regarding this matter is final and cannot be contested.<br/><br/>
                 </p>
               )}
 

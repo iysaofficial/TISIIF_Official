@@ -13,7 +13,7 @@ const NationalOnlinePage = () => {
       alert("You must agree to the Terms & Conditions first.");
       router.push("/registration/national"); // kembali ke halaman pilihan offline/online
     }
-  }, []);
+  }, [router]);
 
   return (
     <>
