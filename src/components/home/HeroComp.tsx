@@ -20,7 +20,7 @@ const HeroComp = () =>{
                 <div className="hero-badge">
                     <span className="badge-icon"><i className="fa-solid fa-clock"></i></span>
                     {/* Pendaftaran Dibuka - Batch 2024 */}
-                    Open Registration
+                    Coming Soon
                 </div>
 
                 <h1 className="hero-title">
