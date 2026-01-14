@@ -19,8 +19,8 @@ const HeroComp = () =>{
 
                 <div className="hero-badge">
                     <span className="badge-icon"><i className="fa-solid fa-clock"></i></span>
-                    {/* Pendaftaran Dibuka - Batch 2024 */}
-                    Coming Soon
+                    Open registration for 2026
+                    {/* Coming Soon */}
                 </div>
 
                 <h1 className="hero-title">
@@ -35,14 +35,14 @@ const HeroComp = () =>{
                 </p>
 
                 <div className="hero-cta">
-                    <Link href="/" className="btn btn-primary">
+                    {/* <Link href="/" className="btn btn-primary">
                         <span><i className="fa-solid fa-calendar-check"></i></span>
                         Coming Soon
-                    </Link>
-                    {/* <Link href="/registration" className="btn btn-primary">
+                    </Link> */}
+                    <Link href="/registration" className="btn btn-primary">
                         <span><i className="fa-solid fa-calendar-check"></i></span>
                         Registration
-                    </Link> */}
+                    </Link>
                     <Link href="https://drive.google.com/file/d/1JCLWwnMJ-D5TKZ9VkniD2mg3McIyqFaA/view?usp=sharing" className="btn btn-secondary" target="_blank">
                         <span><i className="fa-solid fa-book"></i></span>
                         Guide Book

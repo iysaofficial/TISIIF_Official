@@ -22,10 +22,10 @@ const NationalOfflineComp: React.FC = () => {
       }));
     }
   };
-
+  
   useEffect(() => {
     const scriptURL =
-      "https://script.google.com/macros/s/AKfycbyMRYOJEsapaniChfGr0PUkgDA0cIoXniXnmZsd1HzLOg-bx3bhTgvzhdA9mIurLB9siw/exec";
+      "https://script.google.com/macros/s/AKfycbzg2jiTHuV4GEZVmdPyGtQuLg2S5ua6B0Dp-N7NJ1Gx5NsBR1ZbHqrf57Jhtq7pIjnE6A/exec";
 
     const form = document.forms.namedItem("regist-form");
     let buttonCounter = 0;
@@ -37,15 +37,13 @@ const NationalOfflineComp: React.FC = () => {
         if (buttonCounter === 0) {
           try {
             buttonCounter++;
-            const submitButton = form.querySelector(
-              ".submit-button"
-            ) as HTMLButtonElement;
+            const submitButton = form.querySelector('.submit-button') as HTMLButtonElement;
 
             // Disable button and show loading state
             if (submitButton) {
               submitButton.disabled = true;
-              submitButton.textContent = "SENDING...";
-              submitButton.style.backgroundColor = "#6b7280";
+              submitButton.textContent = 'SENDING...';
+              submitButton.style.backgroundColor = '#6b7280';
             }
 
             await fetch(scriptURL, {
@@ -53,42 +51,37 @@ const NationalOfflineComp: React.FC = () => {
               body: new FormData(form),
             });
 
-            // Ambil data penting dari form
+            // ⬇️ TAMBAHAN WAJIB
             const formData = new FormData(form);
-            const name = formData.get("FULL_NAME");
-            const project = formData.get("PROJECT_TITLE");
-            const school = formData.get("SCHOOL_NAME");
 
-            // Simpan ke sessionStorage
             sessionStorage.setItem(
               "submittedData",
               JSON.stringify({
-                name,
-                project,
-                school,
+                name: formData.get("FULL_NAME"),
+                project: formData.get("PROJECT_TITLE"),
+                school: formData.get("SCHOOL_NAME"),
               })
             );
 
             // Success state
             if (submitButton) {
-              submitButton.textContent = "SUCCESSFULLY SENT!";
-              submitButton.style.backgroundColor = "#10b981";
+              submitButton.textContent = 'SUCCESSFULLY SENT!';
+              submitButton.style.backgroundColor = '#10b981';
             }
 
-            // Redirect after 2 seconds
+            // Redirect
             setTimeout(() => {
               window.location.href = "/registration/success";
             }, 2000);
+
           } catch (error) {
             console.error("Error while sending data:", error);
 
             // Error state
-            const submitButton = form.querySelector(
-              ".submit-button"
-            ) as HTMLButtonElement;
+            const submitButton = form.querySelector('.submit-button') as HTMLButtonElement;
             if (submitButton) {
-              submitButton.textContent = "FAILED TO SEND - TRY AGAIN";
-              submitButton.style.backgroundColor = "#ef4444";
+              submitButton.textContent = 'FAILED TO SEND - TRY AGAIN';
+              submitButton.style.backgroundColor = '#ef4444';
               submitButton.disabled = false;
             }
             buttonCounter = 0;

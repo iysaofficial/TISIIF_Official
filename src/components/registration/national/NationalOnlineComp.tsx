@@ -10,7 +10,7 @@ const NationalOnlineComp: React.FC = () => {
     selectedMaxNamaLengkap: "",
     selectedMaxProject: ""
   });
-  
+
   const maxNameChars = 180;
 
   const handleInputNameChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
@@ -25,7 +25,7 @@ const NationalOnlineComp: React.FC = () => {
 
   useEffect(() => {
     const scriptURL =
-      "https://script.google.com/macros/s/AKfycbzs2h5ZJ70S43TwV81AEsopz4sQH40P2hkky7ZP__hRTinQmE1dSwrIKN3iowQetDzgXw/exec";
+      "https://script.google.com/macros/s/AKfycbypg9il3fXzPQxGSMsOjaSaJOF-81rUg0vWzCgEkz5JUHDGeXHoJDT9rCxgBtP5765qLQ/exec";
 
     const form = document.forms.namedItem("regist-form");
     let buttonCounter = 0;
@@ -33,38 +33,50 @@ const NationalOnlineComp: React.FC = () => {
     if (form) {
       const handleSubmit = async (e: Event) => {
         e.preventDefault();
-        
+
         if (buttonCounter === 0) {
           try {
             buttonCounter++;
             const submitButton = form.querySelector('.submit-button') as HTMLButtonElement;
-            
+
             // Disable button and show loading state
             if (submitButton) {
               submitButton.disabled = true;
               submitButton.textContent = 'SENDING...';
               submitButton.style.backgroundColor = '#6b7280';
             }
-            
+
             await fetch(scriptURL, {
               method: "POST",
               body: new FormData(form),
             });
-            
+
+            // ⬇️ TAMBAHAN WAJIB
+            const formData = new FormData(form);
+
+            sessionStorage.setItem(
+              "submittedData",
+              JSON.stringify({
+                name: formData.get("FULL_NAME"),
+                project: formData.get("PROJECT_TITLE"),
+                school: formData.get("SCHOOL_NAME"),
+              })
+            );
+
             // Success state
             if (submitButton) {
               submitButton.textContent = 'SUCCESSFULLY SENT!';
               submitButton.style.backgroundColor = '#10b981';
             }
-            
-            // Redirect after 2 seconds
+
+            // Redirect
             setTimeout(() => {
               window.location.href = "/registration/success";
             }, 2000);
-            
+
           } catch (error) {
             console.error("Error while sending data:", error);
-            
+
             // Error state
             const submitButton = form.querySelector('.submit-button') as HTMLButtonElement;
             if (submitButton) {
@@ -97,16 +109,16 @@ const NationalOnlineComp: React.FC = () => {
     <div className="page-container">
       {/* Header Section */}
       <HeaderSection />
-      
+
       {/* Instruction Section */}
       <InstructionSection />
 
       {/* Registration Form */}
       <div className="registration-form">
         <form name="regist-form">
-          
+
           {/* BIODATA SECTION */}
-          <BiodataSection 
+          <BiodataSection
             selectedMaxNamaLengkap={formState.selectedMaxNamaLengkap}
             handleInputNameChange={handleInputNameChange}
             maxNameChars={maxNameChars}
@@ -124,9 +136,18 @@ const NationalOnlineComp: React.FC = () => {
 
           {/* INFORMASI UMUM SECTION */}
           <InformasiUmumSection />
-          
-          <input type="hidden" name="PRICE" value="Rp. 300.000" readOnly />
-          
+
+          <input type="hidden" id="CATEGORY_PRICE"
+            name="CATEGORY_PRICE" value="Rp. 1.150.000" readOnly />
+          {/* <input
+            type="text"
+            name="CATEGORY_PRICE"
+            className="form-control"
+            value={categoryPrice}
+            readOnly
+            placeholder="Harga akan muncul berdasarkan kategori yang dipilih"
+          /> */}
+
           {/* Submit Button */}
           <div className="submit-container">
             <button type="submit" className="submit-button">
@@ -198,7 +219,7 @@ const BiodataSection: React.FC<BiodataSectionProps> = ({
       <h2 className="section-title">BIODATA</h2>
       <div className="section-underline"></div>
     </div>
-    
+
     <div className="field-grid">
       <div className="field-group">
         <label className="field-label">Participant Categories</label>
@@ -210,7 +231,7 @@ const BiodataSection: React.FC<BiodataSectionProps> = ({
           readOnly
         />
       </div>
-      
+
       <div className="field-group">
         <label className="field-label">Competition Category</label>
         <select name="COMPETITION_CATEGORY" className="select-field" required>
@@ -480,7 +501,7 @@ const DetailProjectSection: React.FC = () => (
           required
         />
       </div>
-      
+
     </div>
   </section>
 );

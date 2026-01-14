@@ -12,10 +12,10 @@ const HomeRegistrationComp = () =>{
             </div>
             <div className="registration-links">
             <Link href="/registration/international" className="registration-link">
-                International Participant
+                International Citizen
             </Link>
             <Link href="/registration/national" className="registration-link">
-                Indonesian Participant
+                Indonesian Citizen
             </Link>
             </div>
         </section>

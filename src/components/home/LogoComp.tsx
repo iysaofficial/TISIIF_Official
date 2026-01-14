@@ -20,10 +20,10 @@ const LogoComp = () =>{
                     
                     <div className="logo-grid">
                         <div className="logo-item">
-                            <Image src="/assets/images/logo/LogoIYSA.webp" alt="Organization 1 Logo"/>
+                            <Image src="/assets/images/logo/LogoIYSA.webp" alt="Organization 1 Logo" width={200} height={100} />
                         </div>
                         <div className="logo-item">
-                            <Image src="/assets/images/logo/Nextgen.png" alt="Organization 2 Logo"/>
+                            <Image src="/assets/images/logo/Nextgen.png" alt="Organization 2 Logo" width={200} height={100} />
                         </div>
                     </div>
                 </div>
@@ -35,7 +35,7 @@ const LogoComp = () =>{
                     
                     <div className="logo-grid">
                         <div className="logo-item">
-                            <Image src="/assets/images/logo/MIICA.png" alt="Sponsor 1 Logo"/>
+                            <Image src="/assets/images/logo/MIICA.png" alt="Sponsor 1 Logo" width={200} height={100} />
                         </div>
                     </div>
                 </div>

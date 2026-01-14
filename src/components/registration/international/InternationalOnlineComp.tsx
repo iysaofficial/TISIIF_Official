@@ -25,7 +25,7 @@ const InternationalOnlineComp: React.FC = () => {
 
   useEffect(() => {
     const scriptURL =
-      "https://script.google.com/macros/s/AKfycbx6Mllkg1A0BfagavfMuv2X8ExhKOSMuwOyYpK1HCnGHbqvfgT4XEs5dHjNt6lOS7paLA/exec";
+      "https://script.google.com/macros/s/AKfycbwt9-TVV_lwB7ZRUzPY0Apigo7DfIBSlSL9hqyg9AQfI3QyC-AR4jbPfGBYDUTKXGPYIg/exec";
 
     const form = document.forms.namedItem("regist-form");
     let buttonCounter = 0;
