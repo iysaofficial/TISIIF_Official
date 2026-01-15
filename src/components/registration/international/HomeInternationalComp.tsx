@@ -42,9 +42,9 @@ const HomeInternationalComp = () => {
             Offline Competition
           </button>
 
-          {/* <button onClick={() => handleOpenTerms("online")} className="registration-link">
+          <button onClick={() => handleOpenTerms("online")} className="registration-link">
             Online Competition
-          </button> */}
+          </button>
         </div>
       </section>
 

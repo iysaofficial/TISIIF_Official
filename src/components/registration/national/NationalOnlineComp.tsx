@@ -139,14 +139,6 @@ const NationalOnlineComp: React.FC = () => {
 
           <input type="hidden" id="CATEGORY_PRICE"
             name="CATEGORY_PRICE" value="Rp. 1.150.000" readOnly />
-          {/* <input
-            type="text"
-            name="CATEGORY_PRICE"
-            className="form-control"
-            value={categoryPrice}
-            readOnly
-            placeholder="Harga akan muncul berdasarkan kategori yang dipilih"
-          /> */}
 
           {/* Submit Button */}
           <div className="submit-container">
