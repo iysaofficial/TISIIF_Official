@@ -1,55 +1,70 @@
-import Link from "next/link"
+import Link from "next/link";
 
-const HeroComp = () =>{
-    return(
-        <>
-        <section className="hero">
-            
-            <div className="hero-background"></div>
-            
-            <div className="hero-overlay"></div>
-            
-            <div className="hero-shapes">
-                <div className="shape"></div>
-                <div className="shape"></div>
-                <div className="shape"></div>
-            </div>
+const HeroComp = () => {
+  return (
+    <>
+      <section className="hero">
+        <div className="hero-background"></div>
 
-            <div className="hero-content">
+        <div className="hero-overlay"></div>
 
-                <div className="hero-badge">
-                    <span className="badge-icon"><i className="fa-solid fa-clock"></i></span>
-                    Open registration for 2026
-                    {/* Coming Soon */}
-                </div>
+        <div className="hero-shapes">
+          <div className="shape"></div>
+          <div className="shape"></div>
+          <div className="shape"></div>
+        </div>
 
-                <h1 className="hero-title">
-                    Bring Your Innovation<br/>
-                    <span className="hero-title-highlight">to Life at TISIIF</span>
-                </h1>
+        <div className="hero-content">
+          <div className="hero-badge">
+            <span className="badge-icon">
+              <i className="fa-solid fa-clock"></i>
+            </span>
+            Registration will be reopened soon. Please stay tuned for the
+            official announcement on our website and social media.
+            {/* Open registration for 2026 */}
+            {/* Coming Soon */}
+          </div>
 
-                <p className="hero-description">
-                    The Thailand International Science, Invention and Innovation Fair (TISIIF)
-                    Indonesias leading platform for young innovators to showcase creative inventions and future-ready solutions. 
-                    Register today and compete for prestigious awards from Bronze to Gold Medals and exclusive Special Awards!
-                </p>
+          <h1 className="hero-title">
+            Bring Your Innovation
+            <br />
+            <span className="hero-title-highlight">to Life at TISIIF</span>
+          </h1>
 
-                <div className="hero-cta">
-                    {/* <Link href="/" className="btn btn-primary">
+          <p className="hero-description">
+            The Thailand International Science, Invention and Innovation Fair
+            (TISIIF) Indonesias leading platform for young innovators to
+            showcase creative inventions and future-ready solutions. Register
+            today and compete for prestigious awards from Bronze to Gold Medals
+            and exclusive Special Awards!
+          </p>
+
+          <div className="hero-cta">
+            {/* <Link href="/" className="btn btn-primary">
                         <span><i className="fa-solid fa-calendar-check"></i></span>
                         Coming Soon
                     </Link> */}
-                    <Link href="/registration" className="btn btn-primary">
-                        <span><i className="fa-solid fa-calendar-check"></i></span>
-                        Registration
-                    </Link>
-                    <Link href="https://drive.google.com/file/d/1JCLWwnMJ-D5TKZ9VkniD2mg3McIyqFaA/view?usp=sharing" className="btn btn-secondary" target="_blank">
-                        <span><i className="fa-solid fa-book"></i></span>
-                        Guide Book
-                    </Link>
-                </div>
+            {/* <Link href="/registration" className="btn btn-primary"> */}
+            <Link href="/" className="btn btn-primary">
+              <span>
+                <i className="fa-solid fa-calendar-check"></i>
+              </span>
+              {/* Registration */}
+              Guidebook and Registration system are currently under maintenance.
+            </Link>
+            {/* <Link
+              href="https://drive.google.com/file/d/1JCLWwnMJ-D5TKZ9VkniD2mg3McIyqFaA/view?usp=sharing"
+              className="btn btn-secondary"
+              target="_blank"
+            >
+              <span>
+                <i className="fa-solid fa-book"></i>
+              </span>
+              Guide Book 
+            </Link> */}
+          </div>
 
-                {/* <div className="hero-stats">
+          {/* <div className="hero-stats">
                     <div className="stat-card">
                         <div className="stat-icon">👥</div>
                         <div className="stat-number">5,000+</div>
@@ -71,12 +86,12 @@ const HeroComp = () =>{
                         <div className="stat-label">Mentor</div>
                     </div>
                 </div> */}
-            </div>
+        </div>
 
-            <div className="scroll-indicator"></div>
-        </section>
-        </>
-    )
-}
+        <div className="scroll-indicator"></div>
+      </section>
+    </>
+  );
+};
 
-export default HeroComp
+export default HeroComp;

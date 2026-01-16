@@ -24,8 +24,10 @@ const NationalOnlineComp: React.FC = () => {
   };
 
   useEffect(() => {
-    const scriptURL =
-      "https://script.google.com/macros/s/AKfycbypg9il3fXzPQxGSMsOjaSaJOF-81rUg0vWzCgEkz5JUHDGeXHoJDT9rCxgBtP5765qLQ/exec";
+    // const scriptURL =
+    //   "https://script.google.com/macros/s/AKfycbypg9il3fXzPQxGSMsOjaSaJOF-81rUg0vWzCgEkz5JUHDGeXHoJDT9rCxgBtP5765qLQ/exec";
+     const scriptURL =
+      "";
 
     const form = document.forms.namedItem("regist-form");
     let buttonCounter = 0;

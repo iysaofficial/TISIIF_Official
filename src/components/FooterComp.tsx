@@ -43,7 +43,7 @@ const FooterComp = () => {
                 <div className="footer-section">
                     <h3>Resources</h3>
                     <ul className="footer-links">
-                        <li><Link href="https://drive.google.com/file/d/1JCLWwnMJ-D5TKZ9VkniD2mg3McIyqFaA/view?usp=sharing" target="_blank">Guide Book</Link></li>
+                        {/* <li><Link href="https://drive.google.com/file/d/1JCLWwnMJ-D5TKZ9VkniD2mg3McIyqFaA/view?usp=sharing" target="_blank">Guide Book</Link></li> */}
                         <li><Link href="#faq">FAQ</Link></li>
                         {/* <li><Link href="#">Gallery</Link></li> */}
                         {/* <li><Link href="#">Media</Link></li> */}
