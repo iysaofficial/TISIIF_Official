@@ -22,12 +22,11 @@ const NationalOfflineComp: React.FC = () => {
       }));
     }
   };
-  
+
   useEffect(() => {
+
     const scriptURL =
-      "";
-    // const scriptURL =
-    //   "https://script.google.com/macros/s/AKfycbzg2jiTHuV4GEZVmdPyGtQuLg2S5ua6B0Dp-N7NJ1Gx5NsBR1ZbHqrf57Jhtq7pIjnE6A/exec";
+      "https://script.google.com/macros/s/AKfycbzg2jiTHuV4GEZVmdPyGtQuLg2S5ua6B0Dp-N7NJ1Gx5NsBR1ZbHqrf57Jhtq7pIjnE6A/exec";
 
     const form = document.forms.namedItem("regist-form");
     let buttonCounter = 0;
@@ -225,13 +224,11 @@ const BiodataSection: React.FC<BiodataSectionProps> = ({
     <div className="field-grid">
       <div className="field-group">
         <label className="field-label">Participant Categories</label>
-        <input
-          type="text"
-          name="PARTICIPANT_CATEGORY"
-          className="input-field"
-          value="Indonesian Citizen"
-          readOnly
-        />
+        <select name="PARTICIPANT_CATEGORY" className="select-field" required>
+          <option value="">--Choose Participant Categories--</option>
+          <option value="Indonesia Participants">Indonesia Participants</option>
+          <option value="Thailand Participants">Thailand Participants</option>
+        </select>
       </div>
 
       <div className="field-group">
@@ -280,7 +277,7 @@ const BiodataSection: React.FC<BiodataSectionProps> = ({
 
       <div className="field-group">
         <label className="field-label">
-          NISN / NIM of Leader & Member Team
+          NISN / NIM of Leader & Member Team (for Indonesia Participants only)
         </label>
         <div className="field-note">
           <p>
@@ -295,7 +292,7 @@ const BiodataSection: React.FC<BiodataSectionProps> = ({
         <textarea
           name="NISN_NIM"
           className="textarea-field"
-          placeholder="Enter NISN / NIM of Team Leader & Members"
+          placeholder="Enter NISN / NIM of Team Leader & Members for Thailand Participants only ( - )"
           required
         />
       </div>
@@ -377,7 +374,7 @@ const DataSekolahSection: React.FC = () => (
 
       <div className="field-group">
         <label className="field-label">
-          Nomor Pokok Sekolah Nasional (NPSN)
+          Nomor Pokok Sekolah Nasional (NPSN) (for Indonesia Participants only)
         </label>
         <div className="field-note">
           <p>
@@ -393,7 +390,8 @@ const DataSekolahSection: React.FC = () => (
         <textarea
           name="NPSN"
           className="textarea-field"
-          placeholder="Enter Your Nomor Pokok Sekolah Nasional (NPSN)"
+          placeholder="Enter Your Nomor Pokok Sekolah Nasional (NPSN) for Thailand Participants only ( - )"
+          required
         />
       </div>
     </div>
@@ -589,14 +587,14 @@ const InformasiUmumSection: React.FC = () => (
         </label>
         <select name="INFORMATION_RESOURCES" className="select-field" required>
           <option value="">--Choose Information Resources--</option>
+          <option value="TISIIF Website">TISIIF Website</option>
+          <option value="IYSA Website">IYSA Website</option>
           <option value="IYSA Instagram">IYSA Instagram</option>
           <option value="TISIIF Instagram">TISIIF Instagram</option>
           <option value="Supervisor/School">Supervisor/School</option>
           <option value="IYSA FaceBook">IYSA FaceBook</option>
           <option value="IYSA Linkedin">IYSA Linkedin</option>
-          <option value="IYSA Website">IYSA Website</option>
-          <option value="TISIIF Website">TISIIF Website</option>
-          <option value="IYSA Email">IYSA Email</option>
+          <option value="IYSA Email" >IYSA Email</option>
           <option value="TISIIF Email">TISIIF Email</option>
           <option value="Previous Event">Previous Event</option>
           <option value="Etc">Etc</option>

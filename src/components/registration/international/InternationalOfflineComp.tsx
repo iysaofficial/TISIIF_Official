@@ -24,10 +24,9 @@ const InternationalOfflineComp: React.FC = () => {
   };
 
   useEffect(() => {
-    // const scriptURL =
-    //   "https://script.google.com/macros/s/AKfycbxvwlInOfAqJxjPc1VO9uW4kSSZQT48J39XPklQVjxeYPaE4L4DxxZgm9M2hvzHbA5OiA/exec";
-     const scriptURL =
-      "";
+    const scriptURL =
+      "https://script.google.com/macros/s/AKfycbxvwlInOfAqJxjPc1VO9uW4kSSZQT48J39XPklQVjxeYPaE4L4DxxZgm9M2hvzHbA5OiA/exec";
+    
 
     const form = document.forms.namedItem("regist-form");
     let buttonCounter = 0;

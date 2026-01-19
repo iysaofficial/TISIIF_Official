@@ -21,10 +21,7 @@ const SuccessComp: React.FC = () => {
       <div className="success-content">
         <div className="success-checkmark">✓</div>
         <h1 className="success-title">Registration Successful!</h1>
-        <p className="success-message">
-          Thank you for registering. Your registration data has been successfully sent.
-        </p>
-
+        <p className="success-description">We appreciate your participation and look forward to your engagement.</p>
         {submittedData && (
           <div className="submitted-data-box">
             <h2 className="submitted-data-title">Your Submission Summary:</h2>
@@ -33,6 +30,7 @@ const SuccessComp: React.FC = () => {
             <div className="submitted-data-item"><strong>School:</strong> {submittedData.school}</div>
           </div>
         )}
+        <p className="success-description">*If the data appears, take a screenshot of this page as proof of successful registration.</p>
 
         <Link href="/" className="success-button">Back to Home</Link>
       </div>

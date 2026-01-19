@@ -38,13 +38,13 @@ const HomeInternationalComp = () => {
         </div>
 
         <div className="registration-links">
-          {/* <button onClick={() => handleOpenTerms("offline")} className="registration-link">
+          <button onClick={() => handleOpenTerms("offline")} className="registration-link">
             Offline Competition
           </button>
 
           <button onClick={() => handleOpenTerms("online")} className="registration-link">
             Online Competition
-          </button> */}
+          </button>
         </div>
       </section>
 
