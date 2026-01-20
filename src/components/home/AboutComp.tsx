@@ -32,35 +32,17 @@ const AboutComp = () =>{
 
                     <div className="about-text">
                         <p className="about-description">
-                            Creating innovative works is a must in todays modern era. These demands
-can be pursued by students and students as a milestone for the future of a
-nation. With this in mind, the Indonesian Young Scientist Association (IYSA)
-organized a competition on Mathematics, Physics, Energy, and Engineering,
-Life Science, Environment, Educations, Technology, Social Science, Health &
-Medicine, Biocensors Technology, Agriculture & Food Science, and Robotics
-& Artificial Intelligence called the Thailand International Science, Invention
-and Innovation Fair (TISIIF).
+                            Creating innovative works is a must in todays modern era. These demands can be pursued by students and students as a milestone for the future of a nation. With this in mind, the Indonesian Young Scientist Association (IYSA) and Next Generation Knowledge ( NGK )  as a organized a competition namely Thailand International Science, Invention and Innovation Fair (TISIIF) with categories Mathematics, Physics, Energy, and Engineering, IoT and its Applications, Environment Agriculture & Food Science, Education and Social Science, Life Sciences, Translational Medicine and Health, Biotechnology and Biosensor Technology, Special Session - TISIIF Next Gen Idea Pitching COmpetition on Innovation Science.
                         </p>
                         
                         <p className="about-description">
-                            TISIIF is a competition for creativity in the field of scientific innovation and
-invention among students (SD/SMP/SMA/University) and students at the
-International level. This activity is expected to foster creativity and
-innovation in the fields of science, education, environment, and social
-science.
+                            TISIIF is a competition for creativity in the field of scientific innovation and invention among students ( Elementary, Secondary & University) level. This activity is expected to foster creativity and innovation in the fields of Mathematics, Physics, Energy, and Engineering, IoT and its Applications, Environment Agriculture & Food Science, Education and Social Science, Life Sciences, Translational Medicine and Health, Biotechnology and Biosensor Technology, Special Session - TISIIF Next Gen Idea Pitching Competition on Innovation Science.
                         </p>
 
-                        <p className="about-description">
-                            In order to foster dynamic competition in the fields of scientific innovation,
-education, social science, and the environment, TISIIF, in partnership with
-Next Generation Thailand, is presenting a number of TISIIF activities this year
-that are colored differently.
-                        </p>
-
-                        <Link href="/about" className="read-more-btn">
+                        {/* <Link href="/about" className="read-more-btn">
                             Read More
                             <span className="btn-icon">→</span>
-                        </Link>
+                        </Link> */}
                     </div>
                 </div>
             </div>

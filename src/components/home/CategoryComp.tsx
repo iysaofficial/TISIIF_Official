@@ -31,7 +31,6 @@ const CategoryComp = () => {
                 applications are encouraged to submit to the &quot;Mathematics&quot;
                 category
               </p>
-              <span className="category-count">View Details</span>
             </div>
 
             {/* Physics, Energy, and Engineering */}
@@ -45,7 +44,6 @@ const CategoryComp = () => {
                 water energy, as well as from fossil fuels and nuclear
                 reactions.
               </p>
-              <span className="category-count">View Details</span>
             </div>
 
             {/* Life Science */}
@@ -60,7 +58,7 @@ const CategoryComp = () => {
                 security, data management, health care, and integration with
                 modern technologies like artificial intelligence (AI)
               </p>
-              <span className="category-count">View Details</span>
+              {/* <span className="category-count">View Details</span> */}
             </div>
 
             {/* Environment Agriculture & Food Science, */}
@@ -75,7 +73,6 @@ const CategoryComp = () => {
                 This category explores the interaction between people, nature,
                 and technology to promote sustainability.
               </p>
-              <span className="category-count">View Details</span>
             </div>
 
             {/* Education */}
@@ -89,7 +86,6 @@ const CategoryComp = () => {
                 creative and effective, such as through online learning tools
                 and educational games.
               </p>
-              <span className="category-count">View Details</span>
             </div>
 
             {/* Life Sciences, Translational Medicine, and Health */}
@@ -104,7 +100,6 @@ const CategoryComp = () => {
                 Life Science is the study of living things and how they grow,
                 function, and interact with their environment.
               </p>
-              <span className="category-count">View Details</span>
             </div>
 
             {/* Biotechnology and Biosensor Technology */}
@@ -120,7 +115,6 @@ const CategoryComp = () => {
                 innovative products that improve health, food, and the
                 environment.
               </p>
-              <span className="category-count">View Details</span>
             </div>
 
             {/* Special Session - TISIIF Next Gen: Idea Pitching Competition on Innovation Science */}
@@ -137,7 +131,6 @@ const CategoryComp = () => {
                 drive innovation, including the creation of novel ideas and
                 solutions in science, technology, the environment, and society.
               </p>
-              <span className="category-count">View Details</span>
             </div>
           </div>
 

@@ -31,7 +31,7 @@ const HeroComp = () => {
 
           <p className="hero-description">
             The Thailand International Science, Invention and Innovation Fair
-            (TISIIF) Indonesias leading platform for young innovators to
+            (TISIIF) is Thailand and Indonesia leading platform for young innovators to
             showcase creative inventions and future-ready solutions. Register
             today and compete for prestigious awards from Bronze to Gold Medals
             and exclusive Special Awards!
