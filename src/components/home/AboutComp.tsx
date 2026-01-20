@@ -44,7 +44,7 @@ const AboutComp = () => {
                 ( NGK ) as a organized a competition namely Thailand
                 International Science, Invention and Innovation Fair (TISIIF)
                 with categories Mathematics, Physics, Energy, and Engineering,
-                IoT and its Applications, Environment, Agriculture & Food
+                IoT and its Applications, Environment, Agriculture and Food
                 Science, Education and Social Science, Life Sciences,
                 Translational Medicine and Health, Biotechnology and Biosensor
                 Technology, Special Session - TISIIF Next Gen Idea Pitching
@@ -57,7 +57,7 @@ const AboutComp = () => {
                 Secondary & University) level. This activity is expected to
                 foster creativity and innovation in the fields of Mathematics,
                 Physics, Energy, and Engineering, IoT and its Applications,
-                Environment, Agriculture, & Food Science, Education and Social
+                Environment, Agriculture, and Food Science, Education and Social
                 Science, Life Sciences, Translational Medicine and Health,
                 Biotechnology and Biosensor Technology, Special Session - TISIIF
                 Next Gen Idea Pitching Competition on Innovation Science.
