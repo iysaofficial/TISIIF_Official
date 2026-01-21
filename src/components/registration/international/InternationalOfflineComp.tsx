@@ -626,8 +626,8 @@ const DetailProjectSection: React.FC = () => (
           <option value="IoT and Its Applications">
             IoT and Its Applications
           </option>
-          <option value="Environment Agriculture & Food Science">
-            Environment Agriculture & Food Science
+          <option value="Environment, Agriculture & Food Science">
+            Environment, Agriculture & Food Science
           </option>
           <option value="Education and Social Sciences">
             Education and Social Sciences
