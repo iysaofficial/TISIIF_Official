@@ -28,21 +28,25 @@ const InternationalOnlineComp: React.FC = () => {
     }
   }, [competitionCategory]);
 
-  const handleCompetitionCategoryChange = useCallback((
-    e: React.ChangeEvent<HTMLSelectElement>
-  ) => {
-    setCompetitionCategory(e.target.value);
-  }, []);
+  const handleCompetitionCategoryChange = useCallback(
+    (e: React.ChangeEvent<HTMLSelectElement>) => {
+      setCompetitionCategory(e.target.value);
+    },
+    [],
+  );
 
-  const handleInputNameChange = useCallback((e: React.ChangeEvent<HTMLTextAreaElement>) => {
-    const { value } = e.target;
-    if (value.length <= 180) {
-      setFormState((prev) => ({
-        ...prev,
-        selectedMaxNamaLengkap: value,
-      }));
-    }
-  }, []);
+  const handleInputNameChange = useCallback(
+    (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+      const { value } = e.target;
+      if (value.length <= 180) {
+        setFormState((prev) => ({
+          ...prev,
+          selectedMaxNamaLengkap: value,
+        }));
+      }
+    },
+    [],
+  );
 
   useEffect(() => {
     const scriptURL =
@@ -59,7 +63,7 @@ const InternationalOnlineComp: React.FC = () => {
           try {
             buttonCounter++;
             const submitButton = form.querySelector(
-              ".submit-button"
+              ".submit-button",
             ) as HTMLButtonElement;
 
             if (submitButton) {
@@ -84,7 +88,7 @@ const InternationalOnlineComp: React.FC = () => {
                 name,
                 project,
                 school,
-              })
+              }),
             );
 
             if (submitButton) {
@@ -99,7 +103,7 @@ const InternationalOnlineComp: React.FC = () => {
             console.error("Error while sending data:", error);
 
             const submitButton = form.querySelector(
-              ".submit-button"
+              ".submit-button",
             ) as HTMLButtonElement;
             if (submitButton) {
               submitButton.textContent = "FAILED TO SEND - TRY AGAIN";
@@ -119,11 +123,14 @@ const InternationalOnlineComp: React.FC = () => {
     }
   }, []);
 
-  const getCharCounterColor = useCallback((length: number, max: number): string => {
-    if (length > max * 0.9) return "#ef4444";
-    if (length > max * 0.8) return "#f59e0b";
-    return "#64748b";
-  }, []);
+  const getCharCounterColor = useCallback(
+    (length: number, max: number): string => {
+      if (length > max * 0.9) return "#ef4444";
+      if (length > max * 0.8) return "#f59e0b";
+      return "#64748b";
+    },
+    [],
+  );
 
   return (
     <div className="page-container">
@@ -139,7 +146,7 @@ const InternationalOnlineComp: React.FC = () => {
             handleInputNameChange={handleInputNameChange}
             charCounterColor={getCharCounterColor(
               formState.selectedMaxNamaLengkap.length,
-              180
+              180,
             )}
             countries={countries}
           />
@@ -149,8 +156,13 @@ const InternationalOnlineComp: React.FC = () => {
           <DetailProjectSection />
           <InformasiUmumSection />
 
-          <input type="hidden" id="CATEGORY_PRICE"
-            name="CATEGORY_PRICE" value={price} readOnly />
+          <input
+            type="hidden"
+            id="CATEGORY_PRICE"
+            name="CATEGORY_PRICE"
+            value={price}
+            readOnly
+          />
 
           <div className="submit-container">
             <button type="submit" className="submit-button">
@@ -215,7 +227,9 @@ const InstructionSection: React.FC = () => (
 // Biodata Section Component
 interface BiodataSectionProps {
   competitionCategory: string;
-  handleCompetitionCategoryChange: (e: React.ChangeEvent<HTMLSelectElement>) => void;
+  handleCompetitionCategoryChange: (
+    e: React.ChangeEvent<HTMLSelectElement>,
+  ) => void;
   selectedMaxNamaLengkap: string;
   handleInputNameChange: (e: React.ChangeEvent<HTMLTextAreaElement>) => void;
   charCounterColor: string;
@@ -282,7 +296,7 @@ const BiodataSection: React.FC<BiodataSectionProps> = ({
           </p>
           <div className="example-box">
             <div>Kamal Putra Ramadhan</div>
-            <div>Ranu Ramadhan</div>
+            <div>Zaidan Adi Prasetya</div>
           </div>
         </div>
         <textarea
@@ -303,7 +317,10 @@ const BiodataSection: React.FC<BiodataSectionProps> = ({
         <select name="PHONE_CODE" className="select-field" required>
           <option value="">--Choose Phone Code--</option>
           {countries.map((country) => (
-            <option key={country.code} value={`${country.name} ${country.code}`}>
+            <option
+              key={country.code}
+              value={`${country.name} ${country.code}`}
+            >
               {country.name} {country.code}
             </option>
           ))}
@@ -499,8 +516,8 @@ const DetailProjectSection: React.FC = () => (
           <option value="IoT and Its Applications">
             IoT and Its Applications
           </option>
-          <option value="Environment, Agriculture & Food Science">
-            Environment, Agriculture & Food Science
+          <option value="Environment Agriculture & Food Science">
+            Environment Agriculture & Food Science
           </option>
           <option value="Education and Social Sciences">
             Education and Social Sciences
