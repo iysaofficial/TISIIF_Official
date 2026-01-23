@@ -61,13 +61,13 @@ const CategoryComp = () => {
               {/* <span className="category-count">View Details</span> */}
             </div>
 
-            {/* Environment Agriculture & Food Science, */}
+            {/* Environment, Agriculture & Food Science, */}
             <div className="category-card">
               <div className="category-icon">
                 <i className="fas fa-leaf"></i>
               </div>
               <h3 className="category-name">
-                Environment Agriculture & Food Science
+                Environment, Agriculture & Food Science
               </h3>
               <p className="category-description">
                 This category explores the interaction between people, nature,
