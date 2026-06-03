@@ -77,7 +77,7 @@ const NavbarComp = () => {
 
             <li className="nav-item">
               <Link
-                href="https://drive.google.com/file/d/1JCLWwnMJ-D5TKZ9VkniD2mg3McIyqFaA/view?usp=sharing"
+                href="https://drive.google.com/file/d/1guPk1m6CtSG9h6gIQ_52k7TUc7RxeWq8/view?usp=sharing"
                 target="_blank"
                 className="nav-link"
               >
