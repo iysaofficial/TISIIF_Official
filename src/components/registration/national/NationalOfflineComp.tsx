@@ -392,7 +392,7 @@ const DataSekolahSection: React.FC = () => (
         <textarea
           name="NPSN"
           className="textarea-field"
-          placeholder="Input Here !"
+          placeholder="Input Here For Indonesian Participants Only !"
         />
       </div>
     </div>
