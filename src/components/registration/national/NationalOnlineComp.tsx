@@ -296,7 +296,7 @@ const BiodataSection: React.FC<BiodataSectionProps> = ({
         <textarea
           name="NISN_NIM"
           className="textarea-field"
-          placeholder="Enter NISN / NIM of Team Leader & Members and for Thailand Participants only ( - )"
+          placeholder="Input Here !"
           required
         />
       </div>
@@ -395,8 +395,7 @@ const DataSekolahSection: React.FC = () => (
         <textarea
           name="NPSN"
           className="textarea-field"
-          placeholder="Enter Your Nomor Pokok Sekolah Nasional (NPSN) and for Thailand Participants only ( - )"
-          required
+          placeholder="Input Here !"
         />
       </div>
     </div>

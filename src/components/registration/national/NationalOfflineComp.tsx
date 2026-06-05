@@ -24,7 +24,6 @@ const NationalOfflineComp: React.FC = () => {
   };
 
   useEffect(() => {
-
     const scriptURL =
       "https://script.google.com/macros/s/AKfycbzg2jiTHuV4GEZVmdPyGtQuLg2S5ua6B0Dp-N7NJ1Gx5NsBR1ZbHqrf57Jhtq7pIjnE6A/exec";
 
@@ -38,13 +37,15 @@ const NationalOfflineComp: React.FC = () => {
         if (buttonCounter === 0) {
           try {
             buttonCounter++;
-            const submitButton = form.querySelector('.submit-button') as HTMLButtonElement;
+            const submitButton = form.querySelector(
+              ".submit-button",
+            ) as HTMLButtonElement;
 
             // Disable button and show loading state
             if (submitButton) {
               submitButton.disabled = true;
-              submitButton.textContent = 'SENDING...';
-              submitButton.style.backgroundColor = '#6b7280';
+              submitButton.textContent = "SENDING...";
+              submitButton.style.backgroundColor = "#6b7280";
             }
 
             await fetch(scriptURL, {
@@ -61,28 +62,29 @@ const NationalOfflineComp: React.FC = () => {
                 name: formData.get("FULL_NAME"),
                 project: formData.get("PROJECT_TITLE"),
                 school: formData.get("SCHOOL_NAME"),
-              })
+              }),
             );
 
             // Success state
             if (submitButton) {
-              submitButton.textContent = 'SUCCESSFULLY SENT!';
-              submitButton.style.backgroundColor = '#10b981';
+              submitButton.textContent = "SUCCESSFULLY SENT!";
+              submitButton.style.backgroundColor = "#10b981";
             }
 
             // Redirect
             setTimeout(() => {
               window.location.href = "/registration/success";
             }, 2000);
-
           } catch (error) {
             console.error("Error while sending data:", error);
 
             // Error state
-            const submitButton = form.querySelector('.submit-button') as HTMLButtonElement;
+            const submitButton = form.querySelector(
+              ".submit-button",
+            ) as HTMLButtonElement;
             if (submitButton) {
-              submitButton.textContent = 'FAILED TO SEND - TRY AGAIN';
-              submitButton.style.backgroundColor = '#ef4444';
+              submitButton.textContent = "FAILED TO SEND - TRY AGAIN";
+              submitButton.style.backgroundColor = "#ef4444";
               submitButton.disabled = false;
             }
             buttonCounter = 0;
@@ -124,7 +126,7 @@ const NationalOfflineComp: React.FC = () => {
             maxNameChars={maxNameChars}
             charCounterColor={getCharCounterColor(
               formState.selectedMaxNamaLengkap.length,
-              maxNameChars
+              maxNameChars,
             )}
           />
 
@@ -259,7 +261,7 @@ const BiodataSection: React.FC<BiodataSectionProps> = ({
           </p>
           <div className="example-box">
             <div>Kamal Putra Ramadhan</div>
-            <div>Ranu Ramadhan</div>
+            <div>Prasetya zaidan adi</div>
           </div>
         </div>
         <textarea
@@ -292,7 +294,7 @@ const BiodataSection: React.FC<BiodataSectionProps> = ({
         <textarea
           name="NISN_NIM"
           className="textarea-field"
-          placeholder="Enter NISN / NIM of Team Leader & Members for Thailand Participants only ( - )"
+          placeholder="Input Here !"
           required
         />
       </div>
@@ -390,8 +392,7 @@ const DataSekolahSection: React.FC = () => (
         <textarea
           name="NPSN"
           className="textarea-field"
-          placeholder="Enter Your Nomor Pokok Sekolah Nasional (NPSN) for Thailand Participants only ( - )"
-          required
+          placeholder="Input Here !"
         />
       </div>
     </div>
@@ -594,7 +595,7 @@ const InformasiUmumSection: React.FC = () => (
           <option value="Supervisor/School">Supervisor/School</option>
           <option value="IYSA FaceBook">IYSA FaceBook</option>
           <option value="IYSA Linkedin">IYSA Linkedin</option>
-          <option value="IYSA Email" >IYSA Email</option>
+          <option value="IYSA Email">IYSA Email</option>
           <option value="TISIIF Email">TISIIF Email</option>
           <option value="Previous Event">Previous Event</option>
           <option value="Etc">Etc</option>
