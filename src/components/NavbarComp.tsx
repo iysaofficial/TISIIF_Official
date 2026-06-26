@@ -222,8 +222,8 @@ const NavbarComp = () => {
               {/* <Link href="/" className="cta-button">
                 Coming Soon
               </Link> */}
-              <Link href="/registration" className="cta-button">
-                Registration Now
+              <Link href="#" className="cta-button">
+                Coming Soon 2027
               </Link>
             </li>
           </ul>

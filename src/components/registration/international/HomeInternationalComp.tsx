@@ -40,7 +40,7 @@ const HomeInternationalComp = () => {
           </div>
         </div>
 
-        <div className="registration-links">
+        {/* <div className="registration-links">
           <button
             onClick={() => handleOpenTerms("offline")}
             className="registration-link"
@@ -54,7 +54,7 @@ const HomeInternationalComp = () => {
           >
             Online Competition
           </button>
-        </div>
+        </div> */}
       </section>
 
       {showModal && (

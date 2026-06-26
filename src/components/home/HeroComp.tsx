@@ -19,8 +19,8 @@ const HeroComp = () => {
             <span className="badge-icon">
               <i className="fa-solid fa-clock"></i>
             </span>
-            Open registration for 2026
-            {/* Coming Soon */}
+            Coming Soon 2027
+            {/* Open registration for 2026 */}
           </div>
 
           <h1 className="hero-title">
@@ -31,10 +31,10 @@ const HeroComp = () => {
 
           <p className="hero-description">
             The Thailand International Science, Invention and Innovation Fair
-            (TISIIF) is Thailand and Indonesia leading platform for young innovators to
-            showcase creative inventions and future-ready solutions. Register
-            today and compete for prestigious awards from Bronze to Gold Medals
-            and exclusive Special Awards!
+            (TISIIF) is Thailand and Indonesia leading platform for young
+            innovators to showcase creative inventions and future-ready
+            solutions. Register today and compete for prestigious awards from
+            Bronze to Gold Medals and exclusive Special Awards!
           </p>
 
           {/* Registration */}
@@ -49,8 +49,10 @@ const HeroComp = () => {
                 </span>
                 Guidebook and Registration system are currently under maintenance.
                 </Link> */}
-            <Link href="/registration" className="btn btn-primary">Registration</Link>
-            <Link
+            <Link href="#" className="btn btn-primary">
+              Coming Soon 2027
+            </Link>
+            {/* <Link
               href="https://drive.google.com/file/d/1guPk1m6CtSG9h6gIQ_52k7TUc7RxeWq8/view?usp=sharing"
               className="btn btn-secondary"
               target="_blank"
@@ -59,7 +61,7 @@ const HeroComp = () => {
                 <i className="fa-solid fa-book"></i>
               </span>
               Guide Book
-            </Link>
+            </Link> */}
           </div>
 
           {/* <div className="hero-stats">
