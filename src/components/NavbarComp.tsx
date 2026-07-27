@@ -91,6 +91,43 @@ const NavbarComp = () => {
               </Link>
             </li>
 
+            <li className="nav-item">
+              <Link href="/#media" className="nav-link">
+                Media
+              </Link>
+            </li>
+
+            <li
+              className={`nav-item ${
+                dropdownOpen === "certificate" ? "dropdown-open" : ""
+              }`}
+            >
+              <Link
+                href="#"
+                className="nav-link"
+                onClick={(e) => {
+                  e.preventDefault();
+                  toggleDropdown("certificate");
+                }}
+              >
+                Certificate <span className="dropdown-arrow" />
+              </Link>
+              <ul className="dropdown-menu">
+                <li className="dropdown-item">
+                  <Link href="/certificate/online" className="dropdown-link">
+                    <span className="dropdown-icon">🌐</span> Online
+                  </Link>
+                </li>
+                
+                <li className="dropdown-item">
+                  <Link href="/certificate/offline" className="dropdown-link">
+                    <span className="dropdown-icon">🏢</span> Offline
+                  </Link>
+                </li>
+              </ul>
+            </li>
+
+
             {/* Dropdown: Kompetisi */}
             {/* <li
             className={`nav-item ${
