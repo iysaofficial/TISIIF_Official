@@ -118,7 +118,7 @@ const NavbarComp = () => {
                     <span className="dropdown-icon">🌐</span> Online
                   </Link>
                 </li>
-                
+
                 <li className="dropdown-item">
                   <Link href="/certificate/offline" className="dropdown-link">
                     <span className="dropdown-icon">🏢</span> Offline
@@ -127,7 +127,11 @@ const NavbarComp = () => {
               </ul>
             </li>
 
-
+            <li className="nav-item">
+              <Link href="/LoW" className="nav-link">
+                List of Winner
+              </Link>
+            </li>
             {/* Dropdown: Kompetisi */}
             {/* <li
             className={`nav-item ${
