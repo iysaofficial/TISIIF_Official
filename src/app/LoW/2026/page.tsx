@@ -53,7 +53,7 @@ export default function LoW2026Page() {
             Online
           </a>
           <a
-            href="#"
+            href="https://drive.google.com/drive/folders/1qWdHghIj0Dfb990EQ8U-FeT-jqtwkVhF?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             style={{
