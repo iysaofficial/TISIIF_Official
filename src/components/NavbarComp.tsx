@@ -91,10 +91,38 @@ const NavbarComp = () => {
               </Link>
             </li>
 
-            <li className="nav-item">
-              <Link href="/#media" className="nav-link">
-                Media
+            <li
+              className={`nav-item ${
+                dropdownOpen === "media" ? "dropdown-open" : ""
+              }`}
+            >
+              <Link
+                href="#"
+                className="nav-link"
+                onClick={(e) => {
+                  e.preventDefault();
+                  toggleDropdown("media");
+                }}
+              >
+                Media <span className="dropdown-arrow" />
               </Link>
+              <ul className="dropdown-menu">
+                <li className="dropdown-item">
+                  <Link href="/media/gallery" className="dropdown-link">
+                    <span className="dropdown-icon">🖼️</span> Gallery
+                  </Link>
+                </li>
+                <li className="dropdown-item">
+                  <Link href="/media/press-release" className="dropdown-link">
+                    <span className="dropdown-icon">📰</span> Press Release
+                  </Link>
+                </li>
+                <li className="dropdown-item">
+                  <Link href="/media/news" className="dropdown-link">
+                    <span className="dropdown-icon">📢</span> News
+                  </Link>
+                </li>
+              </ul>
             </li>
 
             <li
