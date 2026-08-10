@@ -8,12 +8,12 @@ export default function OfflineCertificatePage() {
         </p>
         <div style={{ display: "flex", gap: "20px", justifyContent: "center", flexWrap: "wrap" }}>
           <a
-            href="#"
+            href="https://drive.google.com/drive/folders/1TvE2Tf29ZtxASsBEOUCW-zdPuNYF-L39?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             style={{ padding: "12px 24px", background: "#1E40AF", color: "#fff", textDecoration: "none", borderRadius: "8px", fontWeight: "bold", display: "inline-block" }}
           >
-            Sertifikat 2026
+            Certificates 2026
           </a>
           {/* <a
             href="#"
