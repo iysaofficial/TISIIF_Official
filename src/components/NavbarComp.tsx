@@ -109,17 +109,17 @@ const NavbarComp = () => {
               <ul className="dropdown-menu">
                 <li className="dropdown-item">
                   <Link href="/media/gallery" className="dropdown-link">
-                    <span className="dropdown-icon">🖼️</span> Gallery
+                    <span className="dropdown-icon"></span> Gallery
                   </Link>
                 </li>
                 <li className="dropdown-item">
                   <Link href="/media/press-release" className="dropdown-link">
-                    <span className="dropdown-icon">📰</span> Press Release
+                    <span className="dropdown-icon"></span> Press Release
                   </Link>
                 </li>
                 <li className="dropdown-item">
                   <Link href="/media/news" className="dropdown-link">
-                    <span className="dropdown-icon">📢</span> News
+                    <span className="dropdown-icon"></span> News
                   </Link>
                 </li>
               </ul>

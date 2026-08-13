@@ -13,15 +13,15 @@ const pressReleaseData = [
     badge: "Available",
     badgeClass: "badge-available",
   },
-  {
-    year: "2027",
-    description:
-      "Official TISIIF 2027 Press Release — find all information, announcements, and official documentation for the 2027 event.",
-    icon: "📄",
-    driveUrl: "https://drive.google.com/your-2027-press-release-link", // ganti dengan link Drive 2027
-    badge: "Coming Soon",
-    badgeClass: "badge-coming-soon",
-  },
+  // {
+  //   year: "2027",
+  //   description:
+  //     "Official TISIIF 2027 Press Release — find all information, announcements, and official documentation for the 2027 event.",
+  //   icon: "📄",
+  //   driveUrl: "https://drive.google.com/your-2027-press-release-link", // ganti dengan link Drive 2027
+  //   badge: "Coming Soon",
+  //   badgeClass: "badge-coming-soon",
+  // },
 ];
 
 export default function PressReleasePage() {
