@@ -160,6 +160,19 @@ const NavbarComp = () => {
                 List of Winner
               </Link>
             </li>
+
+            {/*
+              Kurasi: satu tautan, bukan satu tautan per tahun.
+
+              Edisi yang punya berkas terbit dijawab dasbor, jadi halaman
+              pemilihnya yang tahu ada tahun berapa saja — menu ini tidak perlu
+              disunting tiap edisi baru.
+            */}
+            <li className="nav-item">
+              <Link href="/curation" className="nav-link">
+                Curation
+              </Link>
+            </li>
             {/* Dropdown: Kompetisi */}
             {/* <li
             className={`nav-item ${

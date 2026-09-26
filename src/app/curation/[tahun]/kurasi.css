@@ -1,0 +1,109 @@
+/*
+ * Kartu berkas, bukan petak tombol.
+ *
+ * Halaman lain di situs ini memajang beberapa tombol besar rata tengah.
+ * Daftar berkas menuntut kebalikannya: dua puluhan baris teks rata kiri yang
+ * harus bisa dipindai mata, bukan dibaca satu per satu.
+ *
+ * Warnanya #1E40AF, sama dengan halaman List of Winner, supaya halaman ini
+ * tidak terlihat seperti tempelan dari tempat lain.
+ */
+.kurasi-section {
+  min-height: 80vh;
+  padding: 100px 20px 60px;
+  background: #f8fafc;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.kurasi-container {
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.kurasi-kembali {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: #64748b;
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+
+.kurasi-kembali:hover {
+  color: #1e40af;
+}
+
+.kurasi-container h1 {
+  margin: 0 0 0.35rem;
+  color: #1e40af;
+  font-size: clamp(1.7rem, 4vw, 2.5rem);
+  font-weight: 700;
+}
+
+.kurasi-ringkas {
+  margin: 0 0 1.75rem;
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+.kurasi-kabar {
+  margin: 2.5rem 0;
+  color: #64748b;
+  font-size: 0.95rem;
+}
+
+.kurasi-kartu-grid {
+  display: grid;
+  gap: 0.9rem;
+  grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+}
+
+.kurasi-kartu {
+  display: block;
+  padding: 1.1rem 1.15rem;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  color: inherit;
+  text-decoration: none;
+  transition: border-color 0.15s, box-shadow 0.15s, transform 0.15s;
+}
+
+.kurasi-kartu:hover {
+  border-color: #1e40af;
+  box-shadow: 0 6px 18px rgba(30, 64, 175, 0.12);
+  transform: translateY(-1px);
+}
+
+.kurasi-kartu h2 {
+  margin: 0 0 0.35rem;
+  color: #1e40af;
+  font-size: 0.98rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+/*
+ * Nama berkas kurasi panjang, tidak berspasi, dan sering hanya berbeda di
+ * ujungnya — "..._Life_Sciences-1788491625460.pdf". Ia harus membungkus;
+ * dipotong dengan elipsis justru menghapus bagian yang membedakannya.
+ */
+.kurasi-nama {
+  margin: 0;
+  color: #94a3b8;
+  font-size: 0.76rem;
+  line-height: 1.5;
+  word-break: break-all;
+}
+
+.kurasi-badge {
+  display: inline-block;
+  margin-bottom: 0.45rem;
+  padding: 0.14rem 0.55rem;
+  border-radius: 999px;
+  background: #e0e7ff;
+  color: #1e40af;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
