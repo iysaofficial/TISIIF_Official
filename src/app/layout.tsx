@@ -2,6 +2,7 @@ import FooterComp from '@/components/FooterComp';
 import NewsletterComp from '@/components/home/NewsletterComp';
 import NavbarComp from '@/components/NavbarComp';
 import { ReactNode } from 'react';
+import Script from 'next/script';
 
 export const metadata = {
   title: "TISIIF Official"
@@ -44,6 +45,21 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <br />
         <NewsletterComp/>
         <FooterComp />
+        {/*
+          Gelembung "Proses Kurasi" IYSA — kabar kemajuan pengajuan kurasi
+          ajang ke Puspresnas. Dikelola dari dasbor IYSA; berkas ini tidak
+          perlu diubah lagi saat tahunnya berganti karena yang disebut akronim
+          serinya, bukan id edisi. Gelembungnya tidak muncul sama sekali
+          selama belum ada langkah yang dicatat.
+
+          `afterInteractive`, bukan `beforeInteractive`: ia tidak dibutuhkan
+          untuk render pertama dan tidak boleh menahannya.
+        */}
+        <Script
+          src="https://api-dashboard.iysa.or.id/embed/kurasi.js"
+          data-iysa-kurasi="tisiif"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
